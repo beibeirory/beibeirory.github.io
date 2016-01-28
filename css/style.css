@@ -10,11 +10,12 @@
   padding: 0;
 }
 body {
-  background: #eee;
-  color: #444;
+  background: #4d4dff;
+  color: #000;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
+  background-image: url("/img/background.jpg");
 }
 @media screen and (max-width: 1260px) {
   body {
@@ -45,7 +46,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #258fb8;
+  color: #3299cc;
 }
 a:hover {
   text-decoration: underline;
@@ -109,7 +110,7 @@ a:hover {
   color: #999;
 }
 #header a:hover {
-  color: #258fb8;
+  color: #3299cc;
   text-decoration: none;
 }
 #header h1 {
@@ -156,7 +157,7 @@ article.link .icon:before {
 }
 article.link .title a:after {
   content: '\f08e';
-  color: #999;
+  color: #00f;
   font: 12px FontAwesome;
   padding-left: 10px;
   vertical-align: super;
@@ -293,7 +294,7 @@ article header .icon {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #258fb8;
+  color: #3299cc;
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -309,7 +310,7 @@ article header .icon:before {
   text-align: center;
 }
 article header time {
-  color: #999;
+  color: #00f;
   font: 0.9em "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
   display: block;
@@ -319,10 +320,10 @@ article header .title {
   font-weight: normal;
 }
 article header .title a {
-  color: #444;
+  color: #000;
 }
 article header .title a:hover {
-  color: #258fb8;
+  color: #3299cc;
   text-decoration: none;
 }
 article .entry {
@@ -436,7 +437,7 @@ article .entry iframe {
 article .entry .caption {
   display: block;
   margin-top: 5px;
-  color: #999;
+  color: #00f;
   position: relative;
   font-size: 0.9em;
   padding-left: 25px;
@@ -479,17 +480,17 @@ article footer {
   margin-top: 15px;
   padding-top: 10px;
   border-top: 1px solid #ddd;
-  color: #999;
+  color: #00f;
   font-size: 0.9em;
   line-height: 16px;
   position: relative;
   min-height: 16px;
 }
 article footer a {
-  color: #999;
+  color: #00f;
 }
 article footer a:hover {
-  color: #258fb8;
+  color: #3299cc;
   text-decoration: none;
 }
 article footer a:before {
@@ -545,13 +546,13 @@ article footer .addthis iframe {
   display: block;
   padding: 5px 10px;
   background: #ddd;
-  color: #999;
+  color: #00f;
   font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-shadow: 0 0 1px #fff;
   margin-bottom: 50px;
 }
 #pagination a:hover {
-  background: #258fb8;
+  background: #3299cc;
   color: #fff;
   text-decoration: none;
   text-shadow: none;
@@ -567,7 +568,7 @@ article footer .addthis iframe {
   font-family: FontAwesome;
 }
 .archive-title {
-  color: #999;
+  color: #00f;
   font-weight: normal;
   margin-bottom: 30px;
   text-shadow: 0 0 1px #fff;
@@ -654,14 +655,14 @@ article footer .addthis iframe {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  color: #999;
+  color: #00f;
 }
 #sidebar .search input:focus {
-  color: #444;
+  color: #000;
 }
 #sidebar .tag small {
   margin-left: 15px;
-  color: #999;
+  color: #00f;
 }
 #sidebar .tag small:before {
   content: '(';
@@ -680,7 +681,7 @@ article footer .addthis iframe {
 #sidebar .twitter small {
   display: block;
   margin-top: 10px;
-  color: #999;
+  color: #00f;
   line-height: 1;
 }
 #sidebar .tagcloud .entry {
@@ -691,7 +692,7 @@ article footer .addthis iframe {
   display: inline-block;
 }
 #footer {
-  color: #999;
+  color: #00f;
   margin-bottom: 50px;
   font: 0.9em/1.6 "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-shadow: 0 0 1px #fff;
@@ -724,17 +725,17 @@ article footer .addthis iframe {
 }
 .entry .gist .gist-file .gist-meta {
   background: none;
-  color: #999;
+  color: #00f;
   margin-top: 5px;
   padding: 0;
   text-shadow: 0 0 1px #fff;
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #3299cc;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #258fb8;
+  color: #3299cc;
 }
 figure.highlight {
   background: #eee;
@@ -750,7 +751,7 @@ figure.highlight {
   font-size: 0.9em;
 }
 figure.highlight figcaption {
-  color: #999;
+  color: #00f;
   margin-bottom: 5px;
   text-shadow: 0 0 1px #fff;
 }
@@ -768,7 +769,7 @@ figure.highlight table {
   border-spacing: 0;
 }
 figure.highlight .gutter {
-  color: #999;
+  color: #00f;
   padding-right: 15px;
   border-right: 1px solid #ddd;
   text-align: right;
