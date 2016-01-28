@@ -10,8 +10,8 @@
   padding: 0;
 }
 body {
-  background: #4d4dff;
-  color: #000;
+  background: #eee;
+  color: #444;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
@@ -46,7 +46,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #3299cc;
+  color: #258fb8;
 }
 a:hover {
   text-decoration: underline;
@@ -110,7 +110,7 @@ a:hover {
   color: #999;
 }
 #header a:hover {
-  color: #3299cc;
+  color: #258fb8;
   text-decoration: none;
 }
 #header h1 {
@@ -294,7 +294,7 @@ article header .icon {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #3299cc;
+  color: #258fb8;
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -320,10 +320,10 @@ article header .title {
   font-weight: normal;
 }
 article header .title a {
-  color: #000;
+  color: #444;
 }
 article header .title a:hover {
-  color: #3299cc;
+  color: #258fb8;
   text-decoration: none;
 }
 article .entry {
@@ -490,7 +490,7 @@ article footer a {
   color: #00f;
 }
 article footer a:hover {
-  color: #3299cc;
+  color: #258fb8;
   text-decoration: none;
 }
 article footer a:before {
@@ -552,7 +552,7 @@ article footer .addthis iframe {
   margin-bottom: 50px;
 }
 #pagination a:hover {
-  background: #3299cc;
+  background: #258fb8;
   color: #fff;
   text-decoration: none;
   text-shadow: none;
@@ -658,7 +658,7 @@ article footer .addthis iframe {
   color: #00f;
 }
 #sidebar .search input:focus {
-  color: #000;
+  color: #444;
 }
 #sidebar .tag small {
   margin-left: 15px;
@@ -732,10 +732,10 @@ article footer .addthis iframe {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #3299cc;
+  color: #258fb8;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #3299cc;
+  color: #258fb8;
 }
 figure.highlight {
   background: #eee;
