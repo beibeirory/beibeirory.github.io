@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="技术," />
+  <meta name="keywords" content="test," />
 
 
 
@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="Java 构建工具这篇博文只是简单记录自己需要的知识，无他。需要的拿走
-在Java构建工具的世界里，先有了Ant，然后有了Maven。Maven的CoC、依赖管理以及项目构建规则重用性等特点，让Maven几乎成为Java构建工具的事实标准。然而，冗余的依赖管理配置、复杂并且难以扩展的构建生命周期，都成为使用Maven的困扰。Gradle作为新的构建工具，获得了2010 Springy大奖，并入围了">
+<meta name="description" content="Beibei&apos;s blog!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java的依赖管理">
-<meta property="og:url" content="https://www.baidu.com/2016/02/25/Java的依赖管理/index.html">
+<meta property="og:title" content="demo">
+<meta property="og:url" content="https://www.baidu.com/2016/03/11/demo/index.html">
 <meta property="og:site_name" content="Beibei's blog">
-<meta property="og:description" content="Java 构建工具这篇博文只是简单记录自己需要的知识，无他。需要的拿走
-在Java构建工具的世界里，先有了Ant，然后有了Maven。Maven的CoC、依赖管理以及项目构建规则重用性等特点，让Maven几乎成为Java构建工具的事实标准。然而，冗余的依赖管理配置、复杂并且难以扩展的构建生命周期，都成为使用Maven的困扰。Gradle作为新的构建工具，获得了2010 Springy大奖，并入围了">
-<meta property="og:updated_time" content="2016-03-10T12:05:51.412Z">
+<meta property="og:description" content="Beibei&apos;s blog!">
+<meta property="og:updated_time" content="2016-03-11T14:43:52.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java的依赖管理">
-<meta name="twitter:description" content="Java 构建工具这篇博文只是简单记录自己需要的知识，无他。需要的拿走
-在Java构建工具的世界里，先有了Ant，然后有了Maven。Maven的CoC、依赖管理以及项目构建规则重用性等特点，让Maven几乎成为Java构建工具的事实标准。然而，冗余的依赖管理配置、复杂并且难以扩展的构建生命周期，都成为使用Maven的困扰。Gradle作为新的构建工具，获得了2010 Springy大奖，并入围了">
+<meta name="twitter:title" content="demo">
+<meta name="twitter:description" content="Beibei&apos;s blog!">
 
 
 
@@ -87,7 +84,7 @@
   };
 </script>
 
-  <title> Java的依赖管理 | Beibei's blog </title>
+  <title> demo | Beibei's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -227,7 +224,7 @@
             
             
               
-                Java的依赖管理
+                demo
               
             
           </h1>
@@ -239,38 +236,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-25T19:48:58+08:00" content="2016-02-25">
-              2016-02-25
+            <time itemprop="dateCreated" datetime="2016-03-11T22:43:09+08:00" content="2016-03-11">
+              2016-03-11
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/25/Java的依赖管理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/25/Java的依赖管理/" itemprop="commentsCount"></span>
+                <a href="/2016/03/11/demo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/11/demo/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -292,15 +270,7 @@
       
 
       
-        <h3 id="Java_构建工具">Java 构建工具</h3><p><em>这篇博文只是简单记录自己需要的知识，无他。需要的拿走</em></p>
-<p>在Java构建工具的世界里，先有了<strong>Ant</strong>，然后有了<strong>Maven</strong>。Maven的CoC、依赖管理以及项目构建规则重用性等特点，让Maven几乎成为Java构建工具的事实标准。然而，冗余的依赖管理配置、复杂并且难以扩展的构建生命周期，都成为使用Maven的困扰。<strong>Gradle</strong>作为新的构建工具，获得了2010 Springy大奖，并入围了2011的Jax最佳Java技术发明奖。它是基于Groovy语言的构建工具，既保持了Maven的优点，又通过使用Groovy定义的DSL，克服了Maven中使用XML繁冗以及不灵活等缺点。<br><a id="more"></a></p>
-<ul>
-<li><strong>什么是依赖管理？</strong><br>如果你还不了解什么是依赖管理，那么从<a href="http://news.cnw.com.cn/news-international/htm2016/20160224_324750.shtml" target="_blank" rel="external">这篇文章</a>开始有个了解，我想说的是，文章题目起的太大，挑着看看即可。</li>
-<li><strong>什么是Gradle？</strong><br>从<a href="https://segmentfault.com/a/1190000002439306" target="_blank" rel="external">这篇博客</a>开始了解Gradle是什么以及怎么用（这是作者写的一系列教程，请自行查看）。</li>
-<li><strong>Android开发工具 Android Studio VS Eclipse</strong><br>先初步了解，从<a href="https://segmentfault.com/a/1190000002401964" target="_blank" rel="external">这里</a>开始。</li>
-<li><strong>附赠一篇知乎热议-干货</strong><br><a href="http://www.zhihu.com/question/29338218?sort=created" target="_blank" rel="external">知乎热议</a>gradle和maven有什么用？分别有什么区别？</li>
-</ul>
-
+        
       
     </div>
 
@@ -314,7 +284,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/技术/" rel="tag">#技术</a>
+            <a href="/tags/test/" rel="tag">#test</a>
           
         </div>
       
@@ -323,17 +293,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/08/github-简历/" rel="next" title="github 简历">
-                <i class="fa fa-chevron-left"></i> github 简历
+              <a href="/2016/03/10/深度学习随笔一/" rel="next" title="深度学习随笔一">
+                <i class="fa fa-chevron-left"></i> 深度学习随笔一
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/25/webstorm/" rel="prev" title="WebStorm">
-                WebStorm <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -373,8 +339,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/25/Java的依赖管理/"
-           data-title="Java的依赖管理" data-url="https://www.baidu.com/2016/02/25/Java的依赖管理/">
+      <div class="ds-thread" data-thread-key="2016/03/11/demo/"
+           data-title="demo" data-url="https://www.baidu.com/2016/03/11/demo/">
       </div>
     
   </div>
@@ -469,7 +435,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java_构建工具"><span class="nav-number">1.</span> <span class="nav-text">Java 构建工具</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目錄</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
