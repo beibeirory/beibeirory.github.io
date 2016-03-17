@@ -78,7 +78,7 @@
     motion: true,
     duoshuo: {
       userId: 0,
-      author: '博主'
+      author: 'Author'
     }
   };
 </script>
@@ -143,7 +143,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            首頁
+            ホーム
           </a>
         </li>
       
@@ -153,7 +153,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            歸檔
+            アーカイブ
           </a>
         </li>
       
@@ -163,7 +163,7 @@
             
               <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            分類
+            カテゴリ
           </a>
         </li>
       
@@ -173,7 +173,7 @@
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            關於
+            About
           </a>
         </li>
       
@@ -183,7 +183,7 @@
             
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
-            標籤
+            タグ
           </a>
         </li>
       
@@ -226,8 +226,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/11/demo/" itemprop="url">
-                  demo
+                <a class="post-title-link" href="/2016/03/17/选择一个合适的分类器/" itemprop="url">
+                  选择一个合适的分类器
                 </a>
               
             
@@ -239,20 +239,39 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-03-11T22:43:09+08:00" content="2016-03-11">
-              2016-03-11
+            <span class="post-meta-item-text">投稿日</span>
+            <time itemprop="dateCreated" datetime="2016-03-17T15:41:26+08:00" content="2016-03-17">
+              2016-03-17
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/11/demo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/11/demo/" itemprop="commentsCount"></span>
+                <a href="/2016/03/17/选择一个合适的分类器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/17/选择一个合适的分类器/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -276,7 +295,25 @@
       
         
           
-            
+            <p>觉得原文不错，就翻译过来了。才疏学浅，还请各路豪杰批评指正。<a href="http://blog.echen.me/2011/04/27/choosing-a-machine-learning-classifier/" target="_blank" rel="external">原文在这里</a></p>
+<p>你怎么知道为自己的分类问题选择哪一种机器悬系算法？当然，如果非常在意准确度的话，最好的做法是，测试几个不同的算法（确保每个算法都尝试过不同的参数），然后通过交叉验证选择一个最好的。但是，如果你只是想为你的问题找到一个“足够好”的算法，或者是找到一个起始点，那么在这里我会给出多年来我所发现的比较有用的通用准则。</p>
+<ul>
+<li>你的训练集有多大？<br>如果你的训练集很小，那么high bias/low variance的分类器（例如：朴素贝叶斯）优于low bias/high variance的分类器（例如：KNN最近邻），因为后者容易overfit（过拟合）。但是，随着你的数据的增长，low bias/high variance 分类器优势逐渐凸显（他们有更低的渐进误差），因为high bias的分类器不能提供精确的模型。</li>
+</ul>
+<p>你也可以把这个当成生成模型与判别模型的区别。</p>
+<ul>
+<li><p>一些特殊算法的优点</p>
+<ul>
+<li>朴素贝叶斯 Naive Bayes</li>
+<li>逻辑回归 Logistic Regression</li>
+<li>决策树 Decision Trees</li>
+<li>SVMs</li>
+</ul>
+</li>
+<li><p>But</p>
+</li>
+</ul>
+
           
         
       
@@ -334,7 +371,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-03-10T21:11:10+08:00" content="2016-03-10">
               2016-03-10
             </time>
@@ -346,7 +383,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/Deep-Learning/" itemprop="url" rel="index">
@@ -396,7 +433,7 @@
 <li>得益于各种新的模型，算法<br><strong>2. 深度学习大应用</strong>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/10/深度学习随笔一/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -455,7 +492,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-03-10T20:54:56+08:00" content="2016-03-10">
               2016-03-10
             </time>
@@ -467,7 +504,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
@@ -514,7 +551,7 @@
 <p>在没有看《灿烂千阳》之前，《追风筝的人》已经成为我心目中的经典，拜读《灿烂千阳》之后，恩。。。心中的经典又多了一部。自认为，这部小说比《追风筝的人》来说，故事更加成熟与生动。书中各种贴切的隐喻，让我忍不住拍手叫好！<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/10/Mark《一千个灿烂的太阳》/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -573,7 +610,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-03-10T20:44:53+08:00" content="2016-03-10">
               2016-03-10
             </time>
@@ -585,7 +622,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
@@ -632,7 +669,7 @@
 <p>好像扯远了，再回到《偷书贼》上来，书名总是容易让人望文生义（未阅读之前，一度以为这定是一个关于书迷的故事），所以这本书一直存在于浏览目录中，未曾读过。还在与书注定的缘分没有擦肩而过。该怎么说说这本书呢，就说说我喜欢的部分吧。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/10/mark《偷书贼》/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -691,7 +728,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-03-10T20:30:15+08:00" content="2016-03-10">
               2016-03-10
             </time>
@@ -703,7 +740,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
@@ -750,7 +787,7 @@
 <p>那一刻<br>我升起风马 不为祈福 只为守候你的到来<br>那一日<br>垒起玛尼堆 不为修德 只为投下心湖的种子<br>那一月<br>我摇动所有的经筒 不为超度 只为触摸你的指尖<br>那一年<br>磕长头在山路 不为觐见 只为贴着你的温暖<br>那一世<br>转山 不为轮回 只为途中与你相见<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/10/美美的《那一天，那一月，那一年，那一世》/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -809,7 +846,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-03-10T20:21:55+08:00" content="2016-03-10">
               2016-03-10
             </time>
@@ -821,7 +858,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
@@ -868,7 +905,7 @@
 <p><strong>《一个人的朝圣》</strong>一场说走就走的徒步旅行（世界很大，我想去看看，泪~~~）。一个年过六旬的老人，历时87天，行走627英里，只靠着一个自己徒步走下去，友人就能活下去的信念。说实话，刚开始看的时候，觉得哈罗德还是很神经质的，寄信还能寄出这么个荒唐的想法。再看下去，更是反感哈罗德的木讷、不善言谈，甚至在我看来是无担当，随时最后有所改观，但也没能喜欢上作者塑造的这个人物（我记得曾有读者说过，随着深入读下去，我与哈罗德成为了朋友。原谅我，实在不喜欢这种性格的人）。喜欢这本书，是因为这故事，让我思考了很多，虽说想多了，迷茫了，但很多事情也清晰了！我想一本书，最大的意义就是这般了吧，让你喜欢上它，获取有利信息，并将其融入自己的生活中。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/10/mark《一个人的朝圣》/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -927,7 +964,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-02-25T20:29:28+08:00" content="2016-02-25">
               2016-02-25
             </time>
@@ -939,7 +976,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/前端开发/" itemprop="url" rel="index">
@@ -986,7 +1023,7 @@
 <p>-注册码<br><a href="http://peter2009.iteye.com/blog/1975994">任君选择</a></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/02/25/webstorm/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -1045,7 +1082,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2016-02-25T19:48:58+08:00" content="2016-02-25">
               2016-02-25
             </time>
@@ -1057,7 +1094,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index">
@@ -1104,7 +1141,7 @@
 <p>在Java构建工具的世界里，先有了<strong>Ant</strong>，然后有了<strong>Maven</strong>。Maven的CoC、依赖管理以及项目构建规则重用性等特点，让Maven几乎成为Java构建工具的事实标准。然而，冗余的依赖管理配置、复杂并且难以扩展的构建生命周期，都成为使用Maven的困扰。<strong>Gradle</strong>作为新的构建工具，获得了2010 Springy大奖，并入围了2011的Jax最佳Java技术发明奖。它是基于Groovy语言的构建工具，既保持了Maven的优点，又通过使用Groovy定义的DSL，克服了Maven中使用XML繁冗以及不灵活等缺点。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/02/25/Java的依赖管理/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -1163,7 +1200,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2015-09-08T10:05:29+08:00" content="2015-09-08">
               2015-09-08
             </time>
@@ -1175,7 +1212,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/git/" itemprop="url" rel="index">
@@ -1221,7 +1258,7 @@
           <h1 id="github简历模板">github简历模板</h1><p><a href="https://github.com/hit9/GhResume">开始写一个自己的简历吧</a></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/09/08/github-简历/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -1280,7 +1317,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">投稿日</span>
             <time itemprop="dateCreated" datetime="2015-07-28T22:10:13+08:00" content="2015-07-28">
               2015-07-28
             </time>
@@ -1292,7 +1329,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/markdown/" itemprop="url" rel="index">
@@ -1343,7 +1380,7 @@
 <li>音乐<br><embed src="http://www.xiami.com/widget/0_1769183201/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed><h3 id="常用语法">常用语法</h3>摘要
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/07/28/Markdown常用语法/#more" rel="contents">
-              閱讀全文 &raquo;
+              続きを読む &raquo;
             </a>
           </div>
         
@@ -1410,15 +1447,15 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-name">ポスト</span>
             </a>
           </div>
           
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">分類</span>
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">カテゴリ</span>
               </a>
             </div>
           
@@ -1426,8 +1463,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">標籤</span>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">タグ</span>
               </a>
             </div>
           
@@ -1479,11 +1516,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主題 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
