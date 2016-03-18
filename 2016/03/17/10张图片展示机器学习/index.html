@@ -80,7 +80,8 @@
 <meta property="og:image" content="https://www.baidu.com/.\img\discriminative_generative.png">
 <meta property="og:image" content="https://www.baidu.com/.\img\loss_functions.png">
 <meta property="og:image" content="https://www.baidu.com/.\img\least_squares.png">
-<meta property="og:updated_time" content="2016-03-18T02:52:16.023Z">
+<meta property="og:image" content="https://www.baidu.com/.\img\sparsity.png">
+<meta property="og:updated_time" content="2016-03-18T02:54:25.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="10张图片展示机器学习">
 <meta name="twitter:description" content="原文链接请戳这里
@@ -324,7 +325,7 @@
 <h3 id="判别与生成_Discriminative_vs-_Generative">判别与生成 Discriminative vs. Generative</h3><p>为什么判别式学习比生成式学习要简单：<a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/" target="_blank" rel="external">PRML</a> Figure 1.27。左图：输入变量X相互独立的两个类别的类条件密度，右图：其相应的后验概率。可以看到，左图中左侧蓝线绘制出的类条件密度P(x|c1)对后验概率没有影响。右图中竖直的绿线显示了在输入空间X上的决策边界，具有最小的误分率。<br><img src=".\img\discriminative_generative.png" alt="discriminative vs. generative"></p>
 <h3 id="损失函数_Loss_functions">损失函数 Loss functions</h3><p>学习算法可以看做是最优化不同的损失函数：<a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/" target="_blank" rel="external">PRML</a> Figure 7.5。蓝色曲线代表SVM中使用的铰链误差函数；红色曲线表示逻辑回归中使用的误差函数，以因子1/ln(2)缩小，并通过点(0,1)。(译者注：可能此处翻译有误，待我日后来改)黑色线表示误分率，绿色线表示平方误差。<br><img src=".\img\loss_functions.png" alt="Loss functions"></p>
 <h3 id="几何学的最小平方_Geometry_of_least_squares">几何学的最小平方 Geometry of least squares</h3><p><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank" rel="external">ESL</a> Figure 3.2. 有两个预测的N维空间的最小二乘回归，输出向量y垂直投影于由x1和x2决定的超平面上，投影为yˆ ，表示最小二乘预测向量。<br><img src=".\img\least_squares.png" alt="Geometry of least squares"></p>
-<h3 id="稀疏性_Sparsity">稀疏性 Sparsity</h3><p>为什么Lasso(L1 regularization or Laplacian prior)给出稀疏解决办法(例如，有很多零的权重向量): <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank" rel="external">ESL</a> Figure 3.11. 左图：Lasso的近似图形；右图：脊回归（岭回归）的近似图形。分别显示了误差和约束函数的等高线：实蓝色区域表示约束区域’ |β1| + |β2| ≤ t and β12 + β22 ≤ t2’，红色椭圆曲线表示最小二乘误差函数。</p>
+<h3 id="稀疏性_Sparsity">稀疏性 Sparsity</h3><p>为什么Lasso(L1 regularization or Laplacian prior)给出稀疏解决办法(例如，有很多零的权重向量): <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank" rel="external">ESL</a> Figure 3.11. 左图：Lasso的近似图形；右图：脊回归（岭回归）的近似图形。分别显示了误差和约束函数的等高线：实蓝色区域表示约束区域’ |β1| + |β2| ≤ t and β12 + β22 ≤ t2’，红色椭圆曲线表示最小二乘误差函数。<br><img src=".\img\sparsity.png" alt="Sparsity"></p>
 
       
     </div>
