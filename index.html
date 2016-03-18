@@ -226,6 +226,154 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/18/sublime-text-插件之Emmet/" itemprop="url">
+                  sublime text 插件之Emmet
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-03-18T16:34:01+08:00" content="2016-03-18">
+              2016-03-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端开发/" itemprop="url" rel="index">
+                    <span itemprop="name">前端开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/18/sublime-text-插件之Emmet/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/18/sublime-text-插件之Emmet/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以前曾在另一篇博文中记录了前端开发神器Webstorm，最近看到Sublime Text中的Emmet插件，觉得比webstorm还棒~~~ 这里主要简单记录下常用的语法结构。</p>
+<p><em>Emmet的安装超级简单啦，跟其他sublime text插件一样一样滴。安装好以后，赶紧新建个html文件，感受下Emmet吧！</em></p>
+<h3 id="生成HTML文档初始结构">生成HTML文档初始结构</h3><ul>
+<li><p>生成HTML5标准结构<br>输入<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#24471;&#21040;&#65306;</span><br></pre></td></tr></table></figure></p>
+<p>&lt;!DOCTYPE html&gt;<br><html lang="en"><br><head><br>  <meta charset="UTF-8"><br>  <title>Document</title><br></head></html></p>
+<body>
+
+<p></p></body><br><p></p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 生成HTML4过渡型结构</span><br><span class="line">  `<span class="javascript"></span>``<span class="javascript">html:xt</span>``<span class="javascript"></span>` + Ctrl+E</span><br><span class="line">  得到：</span><br></pre></td></tr></table></figure>
+<p>&lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" target="_blank" rel="external">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</a><br><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><br><head><br>  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><br>  <title>Document</title><br></head></html></p>
+<body>
+
+<p></p></body><br><p></p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 生成HTML4严格结构</span><br><span class="line">  `<span class="javascript"></span>``<span class="javascript">html:<span class="number">4</span>s</span>``<span class="javascript"></span>` + Ctrl+E</span><br><span class="line">  得到：</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p><html lang="en"></html></p>
+<p><head><br>    <meta charset="UTF-8"><br>    <title>Document</title><br></head></p>
+<body>
+
+<p></p></body><br><br>  <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">### 生成各级层次的标签</span><br><span class="line">###</span><span class="comment"># 生成后代 &gt;</span></span><br><span class="line">  输入`<span class="javascript"></span>``<span class="javascript">div&gt;ul&gt;li</span>``<span class="javascript"></span>` + Ctrl+E，则得到：</span><br></pre></td></tr></table></figure><p></p>
+  <div><br>    <ul><br>        <li></li><br>    </ul><br>  </div>
+
+  <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#### 生成兄弟 + </span><br><span class="line">输入<span class="escape">``</span><span class="escape">`d</span>iv+p<span class="escape">``</span><span class="escape">` </span>+ Ctrl+E，得到：</span><br></pre></td></tr></table></figure>
+<p> <div></div><br> </p><p></p><br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#### 生成上级元素 ^</span><br><span class="line">输入<span class="escape">``</span><span class="escape">`d</span>iv&gt;ul&gt;li^^span<span class="escape">``</span><span class="escape">` </span>+ Ctrl+E，得到：</span><br></pre></td></tr></table></figure><p></p>
+<p><div><br>    <ul><br>        <li></li><br>    </ul><br></div><br><span></span><br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 生成分组 ()</span><br><span class="line">输入<span class="escape">``</span><span class="escape">`d</span>iv&gt;(ul&gt;li)+span&gt;p<span class="escape">``</span><span class="escape">` </span>+ Ctrl+E，得到：</span><br></pre></td></tr></table></figure></p>
+<p><div><br>    <ul><br>        <li></li><br>    </ul><br>    <span><br>        <p></p><br>    </span><br></div><br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#### 重复生成多份 *</span><br><span class="line">输入<span class="escape">``</span><span class="escape">`u</span>l&gt;li*<span class="number">3</span><span class="escape">``</span><span class="escape">` </span>+ Ctrl+E，则得到：</span><br></pre></td></tr></table></figure></p>
+<p><ul><br>    <li></li><br>    <li></li><br>    <li></li><br></ul><br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="coffeescript"><span class="comment">### 生成带属性的HTML标签</span><br><span class="line"></span><br><span class="line">###</span><span class="comment"># 生成带有id、class的HTML标签</span></span><br><span class="line">- 带有id</span><br><span class="line">输入`<span class="javascript"></span>``<span class="javascript">ul#aaa</span>``<span class="javascript"></span>` + Ctrl+E，则得到：</span></span><br></pre></td></tr></table></figure></p>
+<p><ul id="aaa"></ul><br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- 带有<span class="class"><span class="keyword">class</span></span></span><br><span class="line">输入`<span class="javascript"></span>``<span class="javascript">ul.aaa</span>``<span class="javascript"></span>` + Ctrl+E，则得到：</span><br></pre></td></tr></table></figure></p>
+<p><ul class="aaa"></ul><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入```ul<span class="hexcolor">#ccc</span>.ddd``` + Ctrl+E，则得到：</span><br></pre></td></tr></table></figure></p>
+<p><ul id="ccc" class="ddd"></ul><br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">**注：如果不给定标签的话，默认标签为div。如输入<span class="escape">``</span><span class="escape">`#</span>aaa<span class="escape">``</span><span class="escape">` </span>+ Ctrl+E， 则会得到：</span><br><span class="line"><span class="escape">``</span><span class="escape">`&lt;</span>div id=<span class="string">"aaa"</span>&gt;&lt;/div&gt;<span class="escape">``</span><span class="escape">`*</span>*</span><br><span class="line"></span><br><span class="line">#### 生成自定义属性 [attr]</span><br><span class="line">输入<span class="escape">``</span><span class="escape">`a</span>[href=<span class="string">"http://beibeirory.github.io/"</span>]<span class="escape">``</span><span class="escape">` </span>+ Ctrl+E，则得到：</span><br></pre></td></tr></table></figure></p>
+<p><a href="http://beibeirory.github.io/" target="_blank" rel="external"></a><br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">**其它标签和自定义属性都类似**</span><br><span class="line"></span><br><span class="line"><span class="comment">#### 对属性值编号 $</span></span><br><span class="line">- 一个<span class="variable">$默</span>认编号从<span class="number">1</span>开始，多个<span class="variable">$默</span>认编号从<span class="number">0</span>开始</span><br><span class="line">输入<span class="string">``</span><span class="string">`ul&gt;li.item$*3`</span><span class="string">``</span> + <span class="constant">Ctrl</span>+<span class="constant">E</span></span><br></pre></td></tr></table></figure></p>
+<p>```</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/17/10张图片展示机器学习/" itemprop="url">
                   10张图片展示机器学习
                 </a>
@@ -1273,123 +1421,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/09/08/github-简历/" itemprop="url">
-                  github 简历
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2015-09-08T10:05:29+08:00" content="2015-09-08">
-              2015-09-08
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/09/08/github-简历/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/08/github-简历/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="github简历模板">github简历模板</h1><p><a href="https://github.com/hit9/GhResume">开始写一个自己的简历吧</a></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/09/08/github-简历/#more" rel="contents">
-              閱讀全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1435,7 +1466,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -1452,7 +1483,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>
