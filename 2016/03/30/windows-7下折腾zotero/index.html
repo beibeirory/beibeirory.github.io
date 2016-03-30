@@ -65,7 +65,7 @@ Q1：关于Zotero官方存储空间有限问题">
 <meta property="og:site_name" content="Beibei's blog">
 <meta property="og:description" content="只能说我心伤悲，本来只是想弄一个文献管理工具而已，未曾想折腾这么久，作为一个计算机的妹子，我咋那么怵装软件呢~~5555~
 Q1：关于Zotero官方存储空间有限问题">
-<meta property="og:updated_time" content="2016-03-30T06:25:59.689Z">
+<meta property="og:updated_time" content="2016-03-30T06:33:34.050Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="windows 7下折腾zotero">
 <meta name="twitter:description" content="只能说我心伤悲，本来只是想弄一个文献管理工具而已，未曾想折腾这么久，作为一个计算机的妹子，我咋那么怵装软件呢~~5555~
@@ -82,7 +82,7 @@ Q1：关于Zotero官方存储空间有限问题">
     motion: true,
     duoshuo: {
       userId: 0,
-      author: 'Author'
+      author: '博主'
     }
   };
 </script>
@@ -145,7 +145,7 @@ Q1：关于Zotero官方存储空间有限问题">
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            Accueil
+            首頁
           </a>
         </li>
       
@@ -155,7 +155,7 @@ Q1：关于Zotero官方存储空间有限问题">
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            Archives
+            歸檔
           </a>
         </li>
       
@@ -165,7 +165,7 @@ Q1：关于Zotero官方存储空间有限问题">
             
               <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            Categories
+            分類
           </a>
         </li>
       
@@ -175,7 +175,7 @@ Q1：关于Zotero官方存储空间有限问题">
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            A propos
+            關於
           </a>
         </li>
       
@@ -185,7 +185,7 @@ Q1：关于Zotero官方存储空间有限问题">
             
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
-            Tags
+            標籤
           </a>
         </li>
       
@@ -238,7 +238,7 @@ Q1：关于Zotero官方存储空间有限问题">
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2016-03-30T11:07:01+08:00" content="2016-03-30">
               2016-03-30
             </time>
@@ -250,7 +250,7 @@ Q1：关于Zotero官方存储空间有限问题">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              <span class="post-meta-item-text">分類於</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/zotero/" itemprop="url" rel="index">
@@ -294,9 +294,8 @@ Q1：关于Zotero官方存储空间有限问题">
       
         <p><strong>只能说我心伤悲，本来只是想弄一个文献管理工具而已，未曾想折腾这么久，作为一个计算机的妹子，我咋那么怵装软件呢<del>~~5555</del>~</strong></p>
 <h3 id="Q1：关于Zotero官方存储空间有限问题">Q1：关于Zotero官方存储空间有限问题</h3><a id="more"></a>
-<pre><code>主流处理方式当然是使用云端存储，实现Zotero中PDF文档和其他items分开存储。
-
-具体做法：
+<p>主流处理方式当然是使用云端存储，实现Zotero中PDF文档和其他items分开存储。</p>
+<pre><code>具体做法：
 
 <span class="bullet">- </span>选择合适的云端存储，这里强烈推荐[<span class="link_label">Dropbox</span>](<span class="link_url">https://www.dropbox.com/</span>)
 不在赘述Dropbox的安装和注册，只说一点：如果你是一路默认安装的，可能会需要修改文件存储路径：这个功能在[首选项]--&gt;[账户]--&gt;[位置]。（如果你告诉我，你找不到首选项，那么可能Dropbox默认安装完就藏到你桌面右下角了，打开Dropbox面板找找那个“小齿轮”吧）
@@ -309,17 +308,15 @@ Q1：关于Zotero官方存储空间有限问题">
 
 <span class="bullet">- </span>设置Zotero
 去你的Zotero中进行下同步设置：[工具]--&gt;[首选项]--&gt;[同步]--&gt;[文件同步]下的复选框选择取消即可。
-</code></pre><h3 id="Q2：关于Windows下创建软链接问题">Q2：关于Windows下创建软链接问题</h3><pre><code><span class="bullet">- </span>mklink
-[<span class="link_label">推荐一文</span>](<span class="link_url">http://www.cnblogs.com/asion/archive/2011/03/10/1979282.html</span>)
-
-<span class="bullet">- </span>Dropbox folder sync 
-<span class="strong">**注：**</span>只是一种针对Dropbox的投机方法。（当时实在是各种方法在我的电脑上都不灵光，多亏伟大的博士师兄推荐了Dropbox folder sync，膜拜ing） 
-
-说是投机，是因为Dropbox folder sync主要用来扩展Dropbox，使其能随意同步Dropbox目录以外多个任意指定文件夹的。但是由于其实现原理是将你指定的文件夹移动到 Dropbox 的主文件夹里面去，然后再做一个“符号链接”（类似快捷方式）放到原来的位置。嗯~~~我投机的用了这个<span class="strong">**创建“符号链接”**</span>的梗。。。
-
-Dropbox folder sync安装和使用[<span class="link_label">请戳这里</span>](<span class="link_url">http://www.iplaysoft.com/dropbox-folder-sync.html</span>)
-<span class="strong">**文中下载链接已经失效，我上传了一份，有需要的[请戳这里](http://pan.baidu.com/s/1cJSBYA)**</span>
-</code></pre><h3 id="Q3：关于Zotfile">Q3：关于Zotfile</h3><pre><code>我在另一篇博文中，翻译了Zotfile的使用文档，不过未完待续中。。。
+</code></pre><h3 id="Q2：关于Windows下创建软链接问题">Q2：关于Windows下创建软链接问题</h3><ul>
+<li><p>mklink<br>  <a href="http://www.cnblogs.com/asion/archive/2011/03/10/1979282.html" target="_blank" rel="external">推荐一文</a></p>
+</li>
+<li><p>Dropbox folder sync<br>  <strong>注：</strong>只是一种针对Dropbox的投机方法。（当时实在是各种方法在我的电脑上都不灵光，多亏伟大的博士师兄推荐了Dropbox folder sync，膜拜ing） </p>
+<p>  说是投机，是因为Dropbox folder sync主要用来扩展Dropbox，使其能随意同步Dropbox目录以外多个任意指定文件夹的。但是由于其实现原理是将你指定的文件夹移动到 Dropbox 的主文件夹里面去，然后再做一个“符号链接”（类似快捷方式）放到原来的位置。嗯~~~我投机的用了这个<strong>创建“符号链接”</strong>的梗。。。</p>
+<p>  Dropbox folder sync安装和使用<a href="http://www.iplaysoft.com/dropbox-folder-sync.html" target="_blank" rel="external">请戳这里</a><br>  <strong>文中下载链接已经失效，我上传了一份，有需要的<a href="http://pan.baidu.com/s/1cJSBYA" target="_blank" rel="external">请戳这里</a></strong></p>
+</li>
+</ul>
+<h3 id="Q3：关于Zotfile">Q3：关于Zotfile</h3><pre><code>我在另一篇博文中，翻译了Zotfile的使用文档，不过未完待续中。。。
 </code></pre><p><strong>注：</strong>文章中所提到的问题解决办法，适用于Windows7系统，Zotero standalone版本。其他情况下，不保证正确。</p>
 <p><strong>推荐：</strong><br><a href="https://www.douban.com/group/topic/45562674/" target="_blank" rel="external">Zotero入门六篇</a>：一开始我就是照着这个来的，但是我想说，博文是作者好久之前写的了，很多东西已经更新了（比如链接失效~~），做个参考好了</p>
 
@@ -418,10 +415,10 @@ Dropbox folder sync安装和使用[<span class="link_label">请戳这里</span>]
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table Des Matières
+            文章目錄
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Ensemble
+            本站概覽
           </li>
         </ul>
       
@@ -438,7 +435,7 @@ Dropbox folder sync安装和使用[<span class="link_label">请戳这里</span>]
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">14</span>
-              <span class="site-state-item-name">articles</span>
+              <span class="site-state-item-name">文章</span>
             </a>
           </div>
           
@@ -446,7 +443,7 @@ Dropbox folder sync安装和使用[<span class="link_label">请戳这里</span>]
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">8</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-name">分類</span>
               </a>
             </div>
           
@@ -455,7 +452,7 @@ Dropbox folder sync安装和使用[<span class="link_label">请戳这里</span>]
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">標籤</span>
               </a>
             </div>
           
@@ -524,11 +521,11 @@ Dropbox folder sync安装和使用[<span class="link_label">请戳这里</span>]
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
 </div>
 
 <div class="theme-info">
-  Thème -
+  主題 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
