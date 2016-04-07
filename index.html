@@ -413,9 +413,26 @@
       
         
           
-            <p><a href="http://zotfile.com/" target="_blank" rel="external">原文链接</a></p>
-<h3 id="features">features</h3><p>Zotfile是一款用来管理附件的Zotero插件，主要可以：自动重命名、移动或者附加PDFs（或其他文件）到Zotero条目，将你Zotero库中的PDFs同步到你的（移动）PDF阅读器，从PDFs中摘取注释。</p>
-<h4 id="附加新文件到Zotero_Items">附加新文件到Zotero Items</h4><h4 id="基于Zotero元数据进行（批量）重命名、移动附件">基于Zotero元数据进行（批量）重命名、移动附件</h4><h4 id="同步PDFs到你的iPad或者Android平板电脑">同步PDFs到你的iPad或者Android平板电脑</h4><h4 id="从PDFs中提取注解">从PDFs中提取注解</h4><h3 id="安装Zotfile">安装Zotfile</h3>
+            <p><a href="http://zotfile.com/" target="_blank" rel="external">原文链接</a><br><strong>注：翻译的时候并没有完全按照原文，有些地方自我觉得原文写的不是很清楚（比如，一些安装步骤等），我就按照自己的实际操作经验来写的</strong></p>
+<h3 id="features">features</h3><p>Zotfile是一款用来管理附件的Zotero插件，主要可以：自动重命名、移动或者附加PDFs（或其他文件）到Zotero条目，将你Zotero库中的PDFs同步到你的（移动）PDF阅读器（比如，iPad，Android平板电脑），从PDFs中摘取注释。</p>
+<h4 id="附加新文件到Zotero_Items">附加新文件到Zotero Items</h4><p>  ZotFile可以重命名文件，以附件的形式从Firefox下载或者用户指定文件夹中添加最近修改的文件到当前所选的Zotero条目。ZotFile可以使用当前选择的Zotero条目中的元数据来重命名文件（用户配置），以Zotero附件的形式保存文件到当前条目（或者，移动文件到自定义位置）。</p>
+<h4 id="基于Zotero元数据进行（批量）重命名、移动附件">基于Zotero元数据进行（批量）重命名、移动附件</h4><p>  用户可以选择任意数目的Zotero条目，并根据用户定义的规则来对这些条目中的所有附件进行自动重命名或移动（批处理），其中用户定义的规则基于不同zotero条目的元数据。</p>
+<h4 id="同步PDFs到你的iPad或者Android平板电脑">同步PDFs到你的iPad或者Android平板电脑</h4><p>  为了可以在你的移动设备上阅读或注解PDF附件，ZotFile可以从你的Zotero库同步PDFs到你的（移动）PDF阅读器（例如，iPad，Android平板等）。ZotFile发送文件到你的PC或Mac机上一个与你的PDF阅读器应用（PDF Expert，iAnnotate，GoodReader等）同步的位置，允许你配置自定义子文件夹以便访问，甚至当你从你的平板电脑取回文件的时候，可以提取标注信息和高亮文本到Zotero笔记。说明如下。</p>
+<h4 id="从PDFs中提取注解">从PDFs中提取注解</h4><p>  当你在你的平板电脑（或者computer上的PDF阅读器）上对PDFs进行了高亮或者标注，ZotFile可以自动提取这些高亮文本和标注。提取出的文本被保存为Zotero笔记。多亏了Joe Devietti，现在基于pdf.js库，这个特性可以应用于所有平台。</p>
+<h3 id="安装Zotfile">安装Zotfile</h3><p>  开始使用ZotFile之前，要确保Zotero已经安装，然后可以参考以下步骤：</p>
+<ul>
+<li><p>安装ZotFile</p>
+<p>对于Zotero Firefox，点击下载链接，遵循Mozilla插件页中的指示即可。对于Zotero独立版，首先需要下载扩展文件（<strong>这里没有遵循原文，</strong><a href="http://zotfile.com/" target="_blank" rel="external">下载链接</a>），然后打开Zotero独立版，找到’Tools工具’-&gt;’Add-ons插件’-&gt;’Tools for all Add-ons（右上角的下拉小齿轮）’-&gt;’Install Add-ons From File’，然后选择下载的.xpi文件。</p>
+</li>
+<li><p>改变源文件夹以便附加新文件</p>
+<p>为了附加新文件到Zotero条目，ZotFile会在用户指定文件夹中寻找最近修改（比如，刚下载的）文件。对Zotero Firefox来说，会默认指定Firefox下载文件夹为指定文件夹。对于Zotero独立版来说，需要在首选项窗口中的’General Settings’选项卡中设置（Zotero Actions-&gt;ZotFile Preferences）。源文件夹可以被设置为任意位置，但是我通常建议设置为你的浏览器下载文件夹，如对大多数Mac上浏览器来说的下载文件夹：~/Downloads。</p>
+</li>
+<li><p>改变其他设置（可选）</p>
+<p>ZotFile提供了许多可供用户修改的设置项，大部分都位于Zotero Actions-&gt;ZotFile Preferences下的ZotFile的首选项窗口。</p>
+</li>
+</ul>
+<h3 id="同步PDF附件到你的iPad或者Android平板电脑">同步PDF附件到你的iPad或者Android平板电脑</h3><p>  <strong>第一步，</strong>在你的PC或Mac上建立一个可以与你的平板上阅读器应用同步的文件夹。被复制到此文件夹的文件可以自动显示到你的PDF阅读器应用上。一个可能选择是Dropbox，拥有2G的免费空间，并能协同作用于大多数PDF阅读器应用。更多细节说明或者可选设置可以在你的PDF阅读器网站上获取。<strong>第二步，</strong>打开ZotFile首选项窗口的’Tablet Settings’选项卡，激活’Use ZotFile to send and get files from tablet’的选项。<strong>第三步，</strong>在平板上修改ZotFile的文件位置为你的PDF阅读器可以同步的位置（’Tablet Settings’Base Folder），</p>
+
           
         
       
