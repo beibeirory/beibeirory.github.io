@@ -64,7 +64,8 @@
 <meta property="og:site_name" content="Beibei's blog">
 <meta property="og:description" content="高斯混合模型  sklearn.mixture包，用来学习高斯混合模型（支持对角线型、球形、绑定或全协方差矩阵），采样高斯混合模型，从数据中估计高斯混合模型。也提供了工具来帮助决定最合适的组成成分数量。">
 <meta property="og:image" content="https://www.baidu.com/./img/2.1_GMM.png">
-<meta property="og:updated_time" content="2016-04-09T04:41:19.402Z">
+<meta property="og:image" content="https://www.baidu.com/./img/2.1.1_plot_gmm_classifier.png">
+<meta property="og:updated_time" content="2016-04-09T04:44:02.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高斯混合模型">
 <meta name="twitter:description" content="高斯混合模型  sklearn.mixture包，用来学习高斯混合模型（支持对角线型、球形、绑定或全协方差矩阵），采样高斯混合模型，从数据中估计高斯混合模型。也提供了工具来帮助决定最合适的组成成分数量。">
@@ -296,15 +297,14 @@
 <p>  <strong>高斯混合模型的两部分：</strong>数据点和等概率表面模型</p>
 <p>  高斯混合模型是一个概率模型，假定所有的数据点由带有未知参数的有限数目的高斯分布混合模型生成。可以把高斯混合模型认为是k-means聚类算法的推广，融合了数据的协方差结构和潜在高斯分布中心点的信息。</p>
 <p>  Scikit-learn对应于不同估计策略实现了不同类的高斯混合模型。下面是详细信息。</p>
-<h3 id="高斯混合分类器">高斯混合分类器</h3><pre><code>GMM对象实现了期望最大化（EM）算法来拟合高斯混合模型。它可以为多元模型画出置信椭圆，计算贝叶斯信息准则来获取数据聚类的数目。GMM.fit方法，从训练数据中学习高斯混合模型。给定测试数据，可以使用GMM.predict方法为每个样本给定它最有可能属于的高斯类别。
-
-GMM提供了不同的选项来约束不同类别估计的协方差：球形、对角形、绑定协方差或全协方差。
-![](./img/2.1.1<span class="emphasis">_plot_</span>gmm_classifier.png)
-
-<span class="strong">**例子:**</span>
-  - 参考[<span class="link_label">GMM classification（高斯混合模型分类器）</span>](<span class="link_url">http://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py</span>)，一个基于iris数据集的GMM分类器的例子。
-  - 参考[<span class="link_label">Density Estimation for a mixture of Gaussians（高斯混合模型的密度估计）</span>](<span class="link_url">http://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_pdf.html#example-mixture-plot-gmm-pdf-py</span>)，一个绘制密度估计曲线的例子。
-</code></pre><h4 id="GMM的支持与反对：期望最大化推论">GMM的支持与反对：期望最大化推论</h4><h5 id="支持">支持</h5><p>  速度：学习混合模型最快的算法<br>  不可知论者：</p>
+<h3 id="高斯混合分类器">高斯混合分类器</h3><p>  GMM对象实现了期望最大化（EM）算法来拟合高斯混合模型。它可以为多元模型画出置信椭圆，计算贝叶斯信息准则来获取数据聚类的数目。GMM.fit方法，从训练数据中学习高斯混合模型。给定测试数据，可以使用GMM.predict方法为每个样本给定它最有可能属于的高斯类别。</p>
+<p>  GMM提供了不同的选项来约束不同类别估计的协方差：球形、对角形、绑定协方差或全协方差。<br>  <img src="./img/2.1.1_plot_gmm_classifier.png" alt=""></p>
+<p>  <strong>例子:</strong></p>
+<ul>
+<li>参考<a href="http://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py" target="_blank" rel="external">GMM classification（高斯混合模型分类器）</a>，一个基于iris数据集的GMM分类器的例子。</li>
+<li>参考<a href="http://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_pdf.html#example-mixture-plot-gmm-pdf-py" target="_blank" rel="external">Density Estimation for a mixture of Gaussians（高斯混合模型的密度估计）</a>，一个绘制密度估计曲线的例子。</li>
+</ul>
+<h4 id="GMM的支持与反对：期望最大化推论">GMM的支持与反对：期望最大化推论</h4><h5 id="支持">支持</h5><p>  速度：学习混合模型最快的算法<br>  不可知论者：</p>
 <h5 id="反对">反对</h5><p>  奇异性：<br>  组成数目：</p>
 <h3 id="VBGMM分类器：变分高斯混合">VBGMM分类器：变分高斯混合</h3><h4 id="VBGMM的支持与反对：变分推论">VBGMM的支持与反对：变分推论</h4><h4 id="估计算法：变分推论">估计算法：变分推论</h4><h3 id="DPGMM分类器：无限高斯混合">DPGMM分类器：无限高斯混合</h3><h4 id="DPGMM的支持与反对：Dirichlet过程混合模型">DPGMM的支持与反对：Dirichlet过程混合模型</h4><h4 id="Dirichlet过程">Dirichlet过程</h4>
       
