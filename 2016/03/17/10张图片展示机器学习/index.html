@@ -71,8 +71,8 @@
 当当当~~~正文开始：
 我发现，在解释机器学习基础概念的时候经常会碰到几张相同的图片。下面我列出我觉得最具启发性的10张。
 测试和训练误差 Test and training error  为什么更低的训练误差并不总是一件好事情：ESL">
-<meta property="og:image" content="https://www.baidu.com/.\img\bias_variance.png">
-<meta property="og:image" content="https://www.baidu.com/.\img\underfit_overfit.png">
+<meta property="og:image" content="https://www.baidu.com/../img/bias_variance.png">
+<meta property="og:image" content="https://www.baidu.com/../img/underfit_overfit.png">
 <meta property="og:image" content="https://www.baidu.com/.\img\occam.png">
 <meta property="og:image" content="https://www.baidu.com/.img\feature_combinations.png">
 <meta property="og:image" content="https://www.baidu.com/.\img\irrelevant_features.png">
@@ -81,7 +81,7 @@
 <meta property="og:image" content="https://www.baidu.com/.\img\loss_functions.png">
 <meta property="og:image" content="https://www.baidu.com/.\img\least_squares.png">
 <meta property="og:image" content="https://www.baidu.com/.\img\sparsity.png">
-<meta property="og:updated_time" content="2016-03-18T02:54:25.688Z">
+<meta property="og:updated_time" content="2016-04-11T12:40:56.287Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="10张图片展示机器学习">
 <meta name="twitter:description" content="原文链接请戳这里
@@ -315,9 +315,9 @@
 <p><strong>译者注：其实越往后翻译，越觉得仅凭文中作者所写的解释，无法看懂图片表示的真正含义，需要去到图片源头出处看才行。难道是水平有限。。。飘过~~~~</strong></p>
 <p><strong>当当当~~~正文开始：</strong></p>
 <p>我发现，在解释机器学习基础概念的时候经常会碰到几张相同的图片。下面我列出我觉得最具启发性的10张。</p>
-<h3 id="测试和训练误差_Test_and_training_error">测试和训练误差 Test and training error</h3><p>  为什么更低的训练误差并不总是一件好事情：<a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank" rel="external">ESL</a> Figure2.11. 测试和训练误差是模型复杂度的函数。<br><img src=".\img\bias_variance.png" alt="Test and training error"></p>
+<h3 id="测试和训练误差_Test_and_training_error">测试和训练误差 Test and training error</h3><p>  为什么更低的训练误差并不总是一件好事情：<a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank" rel="external">ESL</a> Figure2.11. 测试和训练误差是模型复杂度的函数。<br><img src="../img/bias_variance.png" alt="Test and training error"></p>
 <a id="more"></a>
-<h3 id="拟合不足和过拟合_Under_and_overfitting">拟合不足和过拟合 Under and overfitting</h3><p>  <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/" target="_blank" rel="external">PRML</a> Figure1.4 红色曲线表示不同阶M的多项式曲线，是对绿色曲线生成的数据集的拟合。<br>  <img src=".\img\underfit_overfit.png" alt="under and overfitting"></p>
+<h3 id="拟合不足和过拟合_Under_and_overfitting">拟合不足和过拟合 Under and overfitting</h3><p>  <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/" target="_blank" rel="external">PRML</a> Figure1.4 红色曲线表示不同阶M的多项式曲线，是对绿色曲线生成的数据集的拟合。<br>  <img src="../img/underfit_overfit.png" alt="under and overfitting"></p>
 <h3 id="奥卡姆剃刀_Occam’s_razor">奥卡姆剃刀 Occam’s razor</h3><p>  <a href="http://www.inference.phy.cam.ac.uk/itila/" target="_blank" rel="external">ITILA</a> Figure 28.3 为什么贝叶斯推理具体体现了奥卡姆剃刀原理<br>  这张图给出了不大可能采用很复杂模型的直观解释。水平坐标轴代表了可能的数据集空间D。贝叶斯原理对模型的奖励是与模型预测数据的多少成比例的，这些预测由在数据集D上的规范化概率分布来量化。在给定模型Hi下，数据集D上的概率P(D|Hi)代表模型Hi的置信度。一个简单地模型H1只能在一定范围的数据集D上进行预测，由P(D|H1)表示；一个更有力的模型H2（比如，比H1有更多的自由参数），可以预测更大范围的数据集。这也意味着，在区域C1的数据集上，模型H2的预测能力不如模型H1。假定同样的先验概率，那么，如果只预测区域C1的数据集，模型H1显然是更合适的。<br>  <img src=".\img\occam.png" alt="Occam&#39;s razor"></p>
 <h3 id="特征组合_Feature_combinations">特征组合 Feature combinations</h3><p>(1)为什么整体相关的特征，分开来看就不相关了。(2)为什么线性方法不适用。来自Isabelle Guyon的<a href="http://clopinet.com/isabelle/Projects/ETH/" target="_blank" rel="external">feature extraction slides</a><br><img src=".img\feature_combinations.png" alt="Feature combinations"></p>
 <h3 id="不相关特征_Irrelevant_features">不相关特征 Irrelevant features</h3><p>为什么不相关的特征会损害KNN(最近邻)，clustering(聚类)，和其他一些基于相似性的方法的效果。左边这张图展示了两个类别在纵轴方向上可以很好地分开。右边这张图，添加了一个不相关的水平轴，破坏了原来的分组，使得很多点非常接近于对立的类别。<br><img src=".\img\irrelevant_features.png" alt="Irrelevant features"></p>
