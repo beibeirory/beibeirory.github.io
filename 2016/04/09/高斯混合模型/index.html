@@ -63,10 +63,10 @@
 <meta property="og:url" content="https://www.baidu.com/2016/04/09/高斯混合模型/index.html">
 <meta property="og:site_name" content="Beibei's blog">
 <meta property="og:description" content="高斯混合模型  sklearn.mixture包，用来学习高斯混合模型（支持对角线型、球形、绑定或全协方差矩阵），采样高斯混合模型，从数据中估计高斯混合模型。也提供了工具来帮助决定最合适的组成成分数量。">
-<meta property="og:image" content="https://www.baidu.com/./img/2.1_GMM.png">
-<meta property="og:image" content="https://www.baidu.com/./img/2.1.1_plot_gmm_classifier.png">
-<meta property="og:image" content="https://www.baidu.com/./img/2.1.1.2_plot_gmm_selection.png">
-<meta property="og:updated_time" content="2016-04-09T13:17:00.687Z">
+<meta property="og:image" content="https://www.baidu.com/img/2.1_GMM.png">
+<meta property="og:image" content="https://www.baidu.com/img/2.1.1_plot_gmm_classifier.png">
+<meta property="og:image" content="https://www.baidu.com/img/2.1.1.2_plot_gmm_selection.png">
+<meta property="og:updated_time" content="2016-04-11T13:32:06.970Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高斯混合模型">
 <meta name="twitter:description" content="高斯混合模型  sklearn.mixture包，用来学习高斯混合模型（支持对角线型、球形、绑定或全协方差矩阵），采样高斯混合模型，从数据中估计高斯混合模型。也提供了工具来帮助决定最合适的组成成分数量。">
@@ -82,7 +82,7 @@
     motion: true,
     duoshuo: {
       userId: 0,
-      author: '博主'
+      author: 'Author'
     }
   };
 </script>
@@ -145,7 +145,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            首頁
+            Home
           </a>
         </li>
       
@@ -155,7 +155,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            歸檔
+            Arquivos
           </a>
         </li>
       
@@ -165,7 +165,7 @@
             
               <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            分類
+            Categorias
           </a>
         </li>
       
@@ -175,7 +175,7 @@
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            關於
+            Sobre
           </a>
         </li>
       
@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
-            標籤
+            Tags
           </a>
         </li>
       
@@ -238,7 +238,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">Postado em</span>
             <time itemprop="dateCreated" datetime="2016-04-09T09:41:13+08:00" content="2016-04-09">
               2016-04-09
             </time>
@@ -250,7 +250,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">Em</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/python/" itemprop="url" rel="index">
@@ -293,13 +293,13 @@
 
       
         <h2 id="高斯混合模型">高斯混合模型</h2><p>  sklearn.mixture包，用来学习高斯混合模型（支持对角线型、球形、绑定或全协方差矩阵），采样高斯混合模型，从数据中估计高斯混合模型。也提供了工具来帮助决定最合适的组成成分数量。</p>
-<p>  <img src="./img/2.1_GMM.png" alt="由高斯混合模型预测的阴性对数似然"></p>
+<p>  <img src="/img/2.1_GMM.png" alt="由高斯混合模型预测的阴性对数似然"></p>
   <a id="more"></a>
 <p>  <strong>高斯混合模型的两部分：</strong>数据点和等概率表面模型</p>
 <p>  高斯混合模型是一个概率模型，假定所有的数据点由带有未知参数的有限数目的高斯分布混合模型生成。可以把高斯混合模型认为是k-means聚类算法的推广，融合了数据的协方差结构和潜在高斯分布中心点的信息。</p>
 <p>  Scikit-learn对应于不同估计策略实现了不同类的高斯混合模型。下面是详细信息。</p>
 <h3 id="Q1-高斯混合分类器">Q1.高斯混合分类器</h3><p>  GMM对象实现了期望最大化（EM）算法来拟合高斯混合模型。它可以为多元模型画出置信椭圆，计算贝叶斯信息准则来获取数据聚类的数目。GMM.fit方法，从训练数据中学习高斯混合模型。给定测试数据，可以使用GMM.predict方法为每个样本给定它最有可能属于的高斯类别。</p>
-<p>  GMM提供了不同的选项来约束不同类别估计的协方差：球形、对角形、绑定协方差或全协方差。<br>  <img src="./img/2.1.1_plot_gmm_classifier.png" alt=""></p>
+<p>  GMM提供了不同的选项来约束不同类别估计的协方差：球形、对角形、绑定协方差或全协方差。<br>  <img src="/img/2.1.1_plot_gmm_classifier.png" alt=""></p>
 <p>  <strong>例子:</strong></p>
 <ul>
 <li>参考<a href="http://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py" target="_blank" rel="external">GMM classification（高斯混合模型分类器）</a>，一个基于iris数据集的GMM分类器的例子。</li>
@@ -307,7 +307,7 @@
 </ul>
 <h4 id="GMM类算法的支持与反对：期望最大化推论">GMM类算法的支持与反对：期望最大化推论</h4><h5 id="支持者">支持者</h5><p>  速度：学习混合模型最快的算法<br>  不可知论者：由于算法仅是最大化似然，所以不会使得均值偏向于零，或者使得聚类大小偏向于具有或适用或不适用的特定结构。</p>
 <h5 id="反对">反对</h5><p>  奇异性：当每次混合没有足够多的数据点时，估计协方差矩阵就会变得很困难，而且算法会收敛并找到具有无穷大似然的解，除非人工正则化协方差。<br>  components的个数：算法通常会适用已经获取的所有components，当没有外部线索时，需要留存数据或信息理论准则来决定components的个数。</p>
-<h4 id="经典GMM中components个数的选择">经典GMM中components个数的选择</h4><p>  BIC（译者注：Bayesian Information Criterions 贝叶斯信息准则）准则可以用来以一种高效的方式来选择GMM中components的个数。理论上，BIC只能在渐进政权中重新获得真正的components的个数。适用DPGMM可以避免为高斯混合模型指定components的个数。<br><img src="./img/2.1.1.2_plot_gmm_selection.png" alt=""></p>
+<h4 id="经典GMM中components个数的选择">经典GMM中components个数的选择</h4><p>  BIC（译者注：Bayesian Information Criterions 贝叶斯信息准则）准则可以用来以一种高效的方式来选择GMM中components的个数。理论上，BIC只能在渐进政权中重新获得真正的components的个数。适用DPGMM可以避免为高斯混合模型指定components的个数。<br><img src="/img/2.1.1.2_plot_gmm_selection.png" alt=""></p>
 <p><strong>例子：</strong></p>
 <ul>
 <li>参考<a href="http://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_selection.html#example-mixture-plot-gmm-selection-py" target="_blank" rel="external">Gaussian Mixture Model Selection高斯混合模型选择</a>，一个由经典GMM实现的模型选择的例子。</li>
@@ -414,10 +414,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目錄
+            Tabela de Conteúdo
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            本站概覽
+            Visão Geral
           </li>
         </ul>
       
@@ -434,7 +434,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">15</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-name">publicações</span>
             </a>
           </div>
           
@@ -442,7 +442,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分類</span>
+                <span class="site-state-item-name">categorias</span>
               </a>
             </div>
           
@@ -451,7 +451,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">標籤</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -520,11 +520,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  Desenvolvido com amor com <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主題 -
+  Tema -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
